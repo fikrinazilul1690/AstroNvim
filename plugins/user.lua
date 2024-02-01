@@ -53,39 +53,10 @@ return {
     opts = {},
   },
   {
-    "Wansmer/treesj",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    keys = {
-      {
-        "<leader>m",
-        "<CMD>TSJToggle<CR>",
-        desc = "Toggle Treesitter Join",
-      },
-    },
-    cmd = { "TSJToggle", "TSJJoin", "TSJSplit" },
-    opts = { use_default_keymaps = false },
-  },
-  {
     "kevinhwang91/nvim-bqf",
     dependencies = { "junegunn/fzf" },
     ft = "qf",
+    opts = {},
   },
   { "junegunn/fzf" },
-  {
-    "folke/trouble.nvim",
-    cmd = { "TroubleToggle", "Troubel" },
-    keys = {
-      { "<leader>x", desc = "Trouble" },
-      { "<leader>xX", "<CMD>TroubleToggle workspace_diagnostics<CR>", desc = "Workspace Diagnostics (Trouble)" },
-      { "<leader>xx", "<CMD>TroubleToggle document_diagnostics<CR>", desc = "Document Diagnostics (Trouble)" },
-      { "<leader>xq", "<CMD>TroubleToggle quickfix<CR>", desc = "Workspace Diagnostics (Trouble)" },
-    },
-    opts = {
-      use_diagnostic_signs = true,
-      action_keys = {
-        close = { "q", "<ESC>" },
-        cancel = "<C-e>",
-      },
-    },
-  },
 }

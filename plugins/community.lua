@@ -10,5 +10,30 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.utility.noice-nvim" },
+  {
+    "folke/noice.nvim",
+    opts = {
+      presets = {
+        bottom_search = false,
+      },
+      views = {
+        cmdline_popup = {
+          position = {
+            row = 15,
+            col = "50%",
+          },
+          size = {
+            width = 60,
+            height = "auto",
+          },
+        },
+      },
+    },
+  },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
