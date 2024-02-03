@@ -52,7 +52,7 @@ return {
           view = "popup",
           filter = {
             event = "msg_show",
-            cmdline = true,
+            cmdline = "lua print",
           },
         },
       },

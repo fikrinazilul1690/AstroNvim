@@ -53,7 +53,7 @@ return {
       -- "pyright"
     },
     config = {
-      golps = {
+      gopls = {
         capabilities = {
           workspace = {
             didChangeWatchedFiles = {
@@ -62,11 +62,13 @@ return {
           },
         },
         settings = {
-          completeUnimported = true,
-          usePlaceholders = true,
-          analyses = {
-            unusedparams = true,
-            unusedvariable = true,
+          gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+              unusedparams = true,
+              unusedvariable = true,
+            },
           },
         },
       },

@@ -16,8 +16,13 @@ return {
       null_ls.builtins.formatting.goimports_reviser,
       null_ls.builtins.diagnostics.codespell,
       null_ls.builtins.formatting.codespell,
-      null_ls.builtins.formatting.sqlfluff.with {
-        extra_args = { "--dialect", "postgres" },
+      null_ls.builtins.formatting.sql_formatter.with {
+        extra_args = function(params)
+          local configFile = "sqlformatter.json"
+          local rootDir = require("null-ls.utils").root_pattern(configFile)(params.bufname)
+          if rootDir then return { "--config", rootDir .. "/" .. configFile } end
+          return { "-l", "postgresql" }
+        end,
       },
     }
     return config -- return final config table
