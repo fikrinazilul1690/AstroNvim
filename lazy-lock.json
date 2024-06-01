@@ -75,7 +75,7 @@
   "todo-comments.nvim": { "branch": "main", "commit": "a7e39ae9e74f2c8c6dc4eea6d40c3971ae84752d" },
   "toggleterm.nvim": { "branch": "main", "commit": "066cccf48a43553a80a210eb3be89a15d789d6e6" },
   "treesj": { "branch": "main", "commit": "f98deb33805485b56a8d44d1a27d16874af00d7f" },
-  "trouble.nvim": { "branch": "main", "commit": "d7f69ff5638cf1864cabac54ade1b1694adfe085" },
+  "trouble.nvim": { "branch": "main", "commit": "c945d9fe43dbe2e693f0b1a0c2420ad7603f880b" },
   "tsc.nvim": { "branch": "main", "commit": "06734767eee606ebaa0a4645e0fd801c64e6aa7a" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
   "which-key.nvim": { "branch": "main", "commit": "4b7167f8fb2dba3d01980735e3509e172c024c29" }
