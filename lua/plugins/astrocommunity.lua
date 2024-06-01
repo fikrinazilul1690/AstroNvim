@@ -16,6 +16,5 @@ return {
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.conform-nvim" },
-  { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.game.leetcode-nvim" },
 }

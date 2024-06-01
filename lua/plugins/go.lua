@@ -43,10 +43,9 @@ return {
   {
     "stevearc/conform.nvim",
     optional = true,
-    opts = {
-      formatters_by_ft = {
-        go = { "goimports-reviser", "gofumpt", "golines" },
-      },
-    },
+    opts = function(_, opts)
+      if not opts.formatters_by_ft then opts.formatters_by_ft = {} end
+      opts.formatters_by_ft["go"] = { "goimports-reviser", "gofumpt", "golines" }
+    end,
   },
 }
