@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.prisma" },
+  { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.pack.lua" },
@@ -24,4 +25,5 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.game.leetcode-nvim" },
+  { import = "astrocommunity.motion.harpoon" },
 }
