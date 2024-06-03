@@ -1,9 +1,8 @@
 return {
   "AstroNvim/astrolsp",
-  ---@type AstroLSPOpts
-  opts = {
-    ---@diagnostic disable: missing-fields
-    config = {
+  ---@param opts AstroLSPOpts
+  opts = function(_, opts)
+    opts.config = require("astrocore").extend_tbl(opts.config or {}, {
       templ = {
         capabilities = {
           workspace = {
@@ -13,6 +12,6 @@ return {
           },
         },
       },
-    },
-  },
+    })
+  end,
 }

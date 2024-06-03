@@ -1,10 +1,9 @@
 return {
   {
     "AstroNvim/astrolsp",
-    ---@type AstroLSPOpts
-    opts = {
-      ---@diagnostic disable: missing-fields
-      config = {
+    ---@param opts AstroLSPOpts
+    opts = function(_, opts)
+      opts.config = require("astrocore").extend_tbl(opts.config or {}, {
         gopls = {
           capabilities = {
             workspace = {
@@ -24,8 +23,8 @@ return {
             },
           },
         },
-      },
-    },
+      })
+    end,
   },
   {
     "jay-babu/mason-null-ls.nvim",
