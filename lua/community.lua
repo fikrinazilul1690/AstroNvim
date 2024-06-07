@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.full-dadbod" },
+  { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.editing-support.neogen" },
