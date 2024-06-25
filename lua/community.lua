@@ -24,7 +24,7 @@ return {
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.utility.noice-nvim" },
-  { import = "astrocommunity.editing-support.conform-nvim" },
+  -- { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.game.leetcode-nvim" },
   { import = "astrocommunity.motion.harpoon" },
 }
