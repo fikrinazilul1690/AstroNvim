@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.prisma" },
-  { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.templ" },
@@ -24,7 +24,6 @@ return {
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.utility.noice-nvim" },
-  -- { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.game.leetcode-nvim" },
   { import = "astrocommunity.motion.harpoon" },
 }
