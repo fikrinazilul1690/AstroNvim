@@ -40,6 +40,13 @@ return {
         opts = { skip = true },
       },
       {
+        filter = {
+          event = "msg_show",
+          kind = "wmsg",
+        },
+        opts = { skip = true },
+      },
+      {
         view = "popup",
         filter = {
           event = "msg_show",
