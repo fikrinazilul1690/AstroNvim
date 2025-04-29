@@ -24,7 +24,7 @@ return {
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.treesj" },
-  { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.completion.blink-cmp" },
   -- { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.game.leetcode-nvim" },

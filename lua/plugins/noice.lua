@@ -1,11 +1,14 @@
 return {
   "folke/noice.nvim",
-  opts = {
-    presets = {
+  opts = function(_, opts)
+    -- Extend the 'presets' field in opts using astrocore.extend_tbl
+    opts.presets = require("astrocore").extend_tbl(opts.presets or {}, {
       bottom_search = false,
       long_message_to_split = false,
-    },
-    views = {
+    })
+
+    -- Extend the 'views' field in opts using astrocore.extend_tbl
+    opts.views = require("astrocore").extend_tbl(opts.views or {}, {
       cmdline_popup = {
         position = {
           row = 15,
@@ -21,8 +24,10 @@ return {
           width = 80,
         },
       },
-    },
-    routes = {
+    })
+
+    -- Extend the 'routes' field in opts using astrocore.extend_tbl
+    opts.routes = require("astrocore").extend_tbl(opts.routes or {}, {
       {
         filter = {
           event = "msg_show",
@@ -53,9 +58,13 @@ return {
           cmdline = "lua print",
         },
       },
-    },
-    cmdline = {
+    })
+
+    -- Extend the 'cmdline' field in opts using astrocore.extend_tbl
+    opts.cmdline = require("astrocore").extend_tbl(opts.cmdline or {}, {
       view = "cmdline_popup",
-    },
-  },
+    })
+
+    return opts
+  end,
 }

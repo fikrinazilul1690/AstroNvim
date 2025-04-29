@@ -1,9 +1,3 @@
-vim.api.nvim_create_user_command("Codespell", function()
-  local filepath = vim.fn.expand "%:p"
-  local escaped_filepath = vim.fn.shellescape(filepath)
-  vim.cmd("!codespell --check-hidden --write-changes " .. escaped_filepath)
-end, {})
-
 return {
   {
     "jay-babu/mason-null-ls.nvim",
